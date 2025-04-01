@@ -7,8 +7,8 @@ import os
 from langchain.chains import ConversationChain
 from langchain_openai import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
-from knowledge_base.retriever import retrieve_answer
-from services.shopify_chat_service import ShopifyChatService
+from src.knowledge_base.retriever import retrieve_answer
+from src.services.shopify_chat_service import ShopifyChatService
 
 # Configure logging
 logging.basicConfig(
