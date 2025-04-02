@@ -14,4 +14,4 @@ COPY . .
 RUN mkdir -p /app/faiss_index
 
 # Start the FastAPI server
-CMD ["uvicorn", "src.webhook_api:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD uvicorn src.webhook_api:app --host 0.0.0.0 --port $PORT
